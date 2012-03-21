@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="google-map">
+	<%= gmaps(:polylines => {:data => @location}) %>
+
+</div>
+
+
+<p>
+  <b>School:</b>
+  <%= @map.school_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_map_path(@map) %> |
+<%= link_to 'Back', maps_path %>

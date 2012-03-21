@@ -1,0 +1,27 @@
+<h1>Listing teacher_reviews</h1>
+
+<table>
+  <tr>
+    <th>Rating</th>
+    <th>Comments</th>
+    <th>Teacher</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @teacher_reviews.each do |teacher_review| %>
+  <tr>
+    <td><%= teacher_review.rating %></td>
+    <td><%= teacher_review.comments %></td>
+    <td><%= teacher_review.teacher_id %></td>
+    <td><%= link_to 'Show', teacher_review %></td>
+    <td><%= link_to 'Edit', edit_teacher_review_path(teacher_review) %></td>
+    <td><%= link_to 'Destroy', teacher_review, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Teacher review', new_teacher_review_path %>
