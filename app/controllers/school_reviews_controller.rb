@@ -1,4 +1,6 @@
 class SchoolReviewsController < ApplicationController
+  before_filter :require_login
+  
   # GET /school_reviews
   # GET /school_reviews.json
   def index

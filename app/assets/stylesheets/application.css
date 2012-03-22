@@ -9,17 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require gmaps4rails 
-
+ *= require bootstrap_and_overrides
  *= require_tree .
+ *= require gmaps4rails 
 */
 
-
-#map-container {
-  width: 800px;
-}
-
-#gmaps4rails_map {
-  width: 800px;
-  height: 400px;
-}
+#mapCanvas label { width: auto; display:inline; }
+#mapCanvas img { max-width: none; }

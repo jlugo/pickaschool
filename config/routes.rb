@@ -1,4 +1,6 @@
 Pickaschool::Application.routes.draw do
+  get "sessions/new"
+
   resources :teachers
 
   resources :teacher_reviews
