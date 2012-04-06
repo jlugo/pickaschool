@@ -5,15 +5,17 @@ class School < ActiveRecord::Base
   acts_as_gmappable
   
   def gmaps4rails_address
-  address
+    address
   end
 
   def gmaps4rails_infowindow
-     "<h2>School name: #{name}, Address: #{address} </h2>"
+     "<h2>
+        School name: <a href='/schools/#{id}'>#{name}</a>, Address: #{address} 
+      </h2>"
   end
     
   def gmaps4rails_sidebar
-   name
+    name
   end  
     
 end

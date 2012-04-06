@@ -1,8 +1,9 @@
-
-<script type="text/javascript">
-Gmaps = {}; 
-</script>
 <h1> Chicago Elementary Schools</h1>
+
+<%= form_tag "/search_my_flights" do %>
+  <%= text_field_tag :keyword %>
+  <%= submit_tag "Search" %>
+<% end %>
 
 
 <%= gmaps4rails(@json) %>

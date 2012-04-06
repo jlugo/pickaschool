@@ -1,55 +1,58 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @school.name %>
-</p>
+<div class="well sidebar-nav">
+    <ul class="nav nav-list">
+      <li class="nav-header">Sidebar</li>
+        <li><%= link_to "teachers", "/"  %></li>
+        <li><%= link_to "demographics", "/path2"  %></li>
+        <li><%= link_to "contact", "/path3"  %></li>
+    </ul>
+  </div><!--/.well -->
+</div><!--/span-->
+<div class="span9">
+	
+	<p>
+	 <b>Name:</b>
+	 <%= @school.name %>
+	</p>
 
-<p>
-  <b>Demographics:</b>
-  <%= @school.demographics %>
-</p>
+	<p>
+	 <b>Demographics:</b>
+	 <%= @school.demographics %>
+	</p>
 
-<p>
-  <b>Groupings:</b>
-  <%= @school.groupings %>
-</p>
+	<p>
+	 <b>Groupings:</b>
+	 <%= @school.groupings %>
+	</p>
 
-<p>
-  <b>Telephone:</b>
-  <%= @school.telephone %>
-</p>
-
-<p>
-  <b>Latitude:</b>
-  <%= @school.latitude %>
-</p>
-
-<p>
-  <b>Longitude:</b>
-  <%= @school.longitude %>
-</p>
-
-<p>
-  <b>Address:</b>
-  <%= @school.address %>
-</p>
-
-<p>
-  <b>School type:</b>
-  <%= @school.school_type %>
-</p>
-
-<p>
-  <b>Zip:</b>
-  <%= @school.zip %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%= @school.city %>
-</p>
+	<p>
+	 <b>Telephone:</b>
+	 <%= @school.telephone %>
+	</p>
 
 
-<%= link_to 'Edit', edit_school_path(@school) %> |
-<%= link_to 'Back', schools_path %>
+	<p>
+	 <b>Address:</b>
+	 <%= @school.address %>
+	</p>
+
+	<p>
+	 <b>School type:</b>
+	 <%= @school.school_type %>
+	</p>
+
+	<p>
+	 <b>Zip:</b>
+	 <%= @school.zip %>
+	</p>
+
+	<p>
+	 <b>City:</b>
+	 <%= @school.city %>
+	</p>
+
+
+	<%= link_to 'Edit', edit_school_path(@school) %> |
+	<%= link_to 'Back', schools_path %>
+</div>

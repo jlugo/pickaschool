@@ -14,5 +14,8 @@
  *= require gmaps4rails 
 */
 
+body{
+	font-family: Helvetica;
+}
 #mapCanvas label { width: auto; display:inline; }
 #mapCanvas img { max-width: none; }
